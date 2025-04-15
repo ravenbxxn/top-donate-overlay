@@ -61,7 +61,7 @@
 
   <script>
     async function loadTopDonators() {
-      const url = "https://streamlabs.com/api/v6/1ee94624888da16/leaderboard/tip?interval=all";
+      const url = "https://streamlabs-proxy.vercel.app/api/top-donations";
       try {
         const res = await fetch(url);
         const data = await res.json();
